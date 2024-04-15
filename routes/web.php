@@ -78,3 +78,10 @@ Route::middleware([
         return Inertia::render('Dashboard');
     })->name('dashboard');
 });
+
+
+Route::get('/test', function () {
+    return Inertia::render('Test', [
+        
+    ]);
+});
